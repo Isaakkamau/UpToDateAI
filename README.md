@@ -1,6 +1,6 @@
 # UpToDateAI
 
-UpToDateAI is a Python package for crawling websites and converting their content into Markdown format. It uses Scrapy for web crawling and various libraries for content extraction and conversion.
+UpToDateAI is a Python package designed to fetch and provide the latest documentation about recently released programming frameworks to AI models. This package helps bridge the gap between AI model training cut-off dates and the latest developments in the programming world.
 
 ## Installation
 
