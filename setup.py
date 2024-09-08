@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="uptodateai",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="A package for crawling and converting web content to Markdown",
+    author="Isaak Kamau",
+    author_email="isaakmwangi2018@gmail.com",
+    description="UpToDateAI is a Python package designed to fetch and provide the latest documentation about recently released programming frameworks to AI models. This package helps bridge the gap between AI model training cut-off dates and the latest developments in the programming world.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/uptodateai",
+    url="https://github.com/IsaakKamau/UpToDateAI",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     classifiers=[

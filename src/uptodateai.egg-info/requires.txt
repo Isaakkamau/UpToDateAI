@@ -1,0 +1,6 @@
+scrapy
+newspaper3k
+markdown
+beautifulsoup4
+html2text
+python-slugify

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/uptodateai/__init__.py
+src/uptodateai/crawler.py
+src/uptodateai/pipeline.py
+src/uptodateai/utils.py
+src/uptodateai.egg-info/PKG-INFO
+src/uptodateai.egg-info/SOURCES.txt
+src/uptodateai.egg-info/dependency_links.txt
+src/uptodateai.egg-info/requires.txt
+src/uptodateai.egg-info/top_level.txt
+tests/test_uptodateai.py

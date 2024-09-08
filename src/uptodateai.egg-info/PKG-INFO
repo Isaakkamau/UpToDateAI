@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: uptodateai
+Version: 0.1.0
+Summary: Python package designed to fetch and provide the latest documentation about recently released programming frameworks to AI models. This package helps bridge the gap between AI model training cut-off dates and the latest developments in the programming world.
+Home-page: https://github.com/IsaakKamau/UpToDateAI
+Author: Isaak Kamau
+Author-email: isaakmwangi2018@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scrapy
+Requires-Dist: newspaper3k
+Requires-Dist: markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: html2text
+Requires-Dist: python-slugify
+
+# UpToDateAI
+
+UpToDateAI is a Python package designed to fetch and provide the latest documentation about recently released programming frameworks to AI models. This package helps bridge the gap between AI model training cut-off dates and the latest developments in the programming world.
+
+## Installation
+
+You can install UpToDateAI using pip:
+
+```bash
+pip install uptodateai
+```
+
+## Usage
+
+URL of the website you want to crawl:
+
+```python
+from uptodateai import process_docs
+
+process_docs("https://docs.fastht.ml/")
+```
+
+This will crawl the specified website and save the content as Markdown files in a `docs` directory.
+
+## Features
+
+- Web crawling using Scrapy
+- Content extraction using newspaper3k
+- HTML to Markdown conversion
+- Automatic directory structure creation based on URL paths
+- Customizable crawling settings
+
+## Development
+
+To set up the development environment:
+
+1. Clone the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run tests: `python -m unittest discover tests`
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
