@@ -30,13 +30,33 @@ This will crawl the specified website and save the content as Markdown files in 
 - Automatic directory structure creation based on URL paths
 - Customizable crawling settings
 
-## Development
+## How to use it (recommended for cursor.com IDE):
 
-To set up the development environment:
+Inside your project, pass the URL of the documentation you want to crawl:
 
-1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run tests: `python -m unittest discover tests`
+```bash
+from uptodateai import process_docs
+```
+
+```python
+process_docs("https://microsoft.github.io/graphrag/")
+```
+
+3. Run the code. A new folder called `/docs` (very well organized in Markdown format)will be generated within your project. This directory we will then use it as our knowledge base for AI models to enhance their understanding of the latest frameworks.
+
+4. We pass the knowledge base to AI using Cursor Composer:
+
+### To use Cursor Composer:
+
+- Enable it in Cursor Settings under the "Beta" section
+- Use the shortcut Cmd+I (MacOS) or Ctrl+I (Windows) to open the Composer interface
+- Provide instructions (eg build a web app using Fasthtml and mention relevant files for our case we will mention `@/docs`)
+
+5. The cursor composer will generate new files and code in accordance to the library documentation
+
+6. Review and refine the generated code as needed
+
+7. Please give it a star on GitHub if you find it helpful:
 
 ## License
 
